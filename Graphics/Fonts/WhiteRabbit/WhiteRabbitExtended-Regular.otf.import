@@ -1,0 +1,38 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://c73ihqe2a0lkw"
+path="res://.godot/imported/WhiteRabbitExtended-Regular.otf-f0f7aa96bbe885832ba049c7485b5c9e.fontdata"
+
+[deps]
+
+source_file="res://Graphics/Fonts/WhiteRabbit/WhiteRabbitExtended-Regular.otf"
+dest_files=["res://.godot/imported/WhiteRabbitExtended-Regular.otf-f0f7aa96bbe885832ba049c7485b5c9e.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[Resource("res://Graphics/Fonts/Emoji_NotoSans/NotoEmoji-Bold.ttf"), Resource("res://Graphics/Fonts/Symbols_NotoSans/NotoSansSymbols-Regular.ttf"), Resource("res://Graphics/Fonts/Symbols_NotoSans/NotoSansSymbols2-Regular.ttf"), Resource("res://Graphics/Fonts/JP_NotoSans/NotoSansJP-Regular.otf"), Resource("res://Graphics/Fonts/KR_NotoSans/NotoSansKR-Regular.otf"), Resource("res://Graphics/Fonts/Latin_NotoSans/NotoSans-Regular.ttf"), Resource("res://Graphics/Fonts/Symbols_NotoSans/NotoSansMath-Regular.ttf"), Resource("res://Graphics/Fonts/CJK_NotoSans/NotoSansCJK-VF.otf")]
+Compress=null
+compress=true
+preload=[{
+"chars": [255, 254, 253, 252, 251, 250, 249, 248, 247, 246, 245, 244, 243, 242, 241, 240, 239, 238, 237, 236, 235, 234, 233, 232, 231, 230, 229, 228, 227, 226, 225, 224, 223, 222, 221, 220, 219, 218, 217, 216, 215, 214, 213, 212, 211, 210, 209, 208, 207, 206, 205, 204, 203, 202, 201, 200, 199, 198, 197, 196, 195, 194, 193, 192, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 163, 162, 161, 160, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 8352, 8356, 8361, 8364, 8365, 8369, 8381, 8383],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0)
+}]
+language_support={}
+script_support={}
+opentype_features={}

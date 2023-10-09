@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg1a81kr3u0he"]
+
+[ext_resource type="Theme" uid="uid://biprvl3dlana6" path="res://Graphics/Themes/YT_Connection_Theme.tres" id="1_fyos7"]
+[ext_resource type="Script" path="res://Scripts/ConnectToYoutube.cs" id="2_gdplq"]
+[ext_resource type="PackedScene" uid="uid://bbfuemxu5vi6k" path="res://Youtube/YoutubeDataAPI.tscn" id="2_u05l3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_fyos7")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0823529, 0, 0.168627, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Panel"]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="YoutubeConnectionInputs" type="Control" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoID" type="LineEdit" parent="CanvasLayer/Panel/YoutubeConnectionInputs"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 50.0
+grow_horizontal = 0
+placeholder_text = "Video ID"
+
+[node name="API_Key" type="LineEdit" parent="CanvasLayer/Panel/YoutubeConnectionInputs"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 50.0
+offset_bottom = 100.0
+grow_horizontal = 0
+placeholder_text = "API Key"
+secret = true
+
+[node name="ConnectButton" type="Button" parent="CanvasLayer/Panel/YoutubeConnectionInputs"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 105.0
+offset_bottom = 155.0
+grow_horizontal = 0
+theme = ExtResource("1_fyos7")
+text = "Connect"
+
+[node name="APIConnectNode" type="Node" parent="." node_paths=PackedStringArray("YTFieldsBase", "VideoIDField", "APIKeyField", "ConnectionButton", "YoutubeAPI", "Container", "ContentBase")]
+script = ExtResource("2_gdplq")
+YTFieldsBase = NodePath("../CanvasLayer/Panel/YoutubeConnectionInputs")
+VideoIDField = NodePath("../CanvasLayer/Panel/YoutubeConnectionInputs/VideoID")
+APIKeyField = NodePath("../CanvasLayer/Panel/YoutubeConnectionInputs/API_Key")
+ConnectionButton = NodePath("../CanvasLayer/Panel/YoutubeConnectionInputs/ConnectButton")
+YoutubeAPI = NodePath("YoutubeDataAPI")
+Container = NodePath("../CanvasLayer/Panel/ScrollContainer")
+ContentBase = NodePath("../CanvasLayer/Panel/ScrollContainer/VBoxContainer")
+
+[node name="YoutubeDataAPI" parent="APIConnectNode" instance=ExtResource("2_u05l3")]

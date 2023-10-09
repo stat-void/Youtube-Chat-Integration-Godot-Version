@@ -1,0 +1,31 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://biprvl3dlana6"]
+
+[ext_resource type="FontFile" uid="uid://c73ihqe2a0lkw" path="res://Graphics/Fonts/WhiteRabbit/WhiteRabbitExtended-Regular.otf" id="1_scp2y"]
+
+[sub_resource type="Gradient" id="Gradient_ahgqq"]
+offsets = PackedFloat32Array(0, 0.984456, 1)
+colors = PackedColorArray(0.160784, 0, 0.592157, 1, 0.486275, 0, 0.901961, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5n4bs"]
+gradient = SubResource("Gradient_ahgqq")
+fill_from = Vector2(0.504274, 1)
+fill_to = Vector2(0.491453, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lkjk3"]
+texture = SubResource("GradientTexture2D_5n4bs")
+
+[resource]
+default_font = ExtResource("1_scp2y")
+Button/colors/font_color = Color(0.760784, 0.00392157, 0.945098, 1)
+Button/colors/font_focus_color = Color(0.760784, 0.00392157, 0.945098, 1)
+Button/colors/font_hover_color = Color(0.941176, 0.00392157, 0.945098, 1)
+Button/colors/font_hover_pressed_color = Color(0.760784, 0.00392157, 0.945098, 1)
+Button/colors/font_pressed_color = Color(0.380392, 0, 0.478431, 1)
+Button/colors/icon_focus_color = Color(0.85098, 0.321569, 1, 1)
+Button/colors/icon_hover_color = Color(0.905882, 0.00392157, 0.945098, 1)
+Button/styles/disabled = null
+Button/styles/normal = SubResource("StyleBoxTexture_lkjk3")
+LineEdit/colors/caret_color = Color(0.603922, 0, 0.94902, 1)
+LineEdit/colors/font_color = Color(0.823529, 0, 1, 1)
+LineEdit/colors/font_placeholder_color = Color(0.988235, 0.505882, 0.823529, 0.6)
+LineEdit/colors/selection_color = Color(0.854902, 0.545098, 0, 1)

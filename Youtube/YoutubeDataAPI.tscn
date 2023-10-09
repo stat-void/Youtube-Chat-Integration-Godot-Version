@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbfuemxu5vi6k"]
+
+[ext_resource type="Script" path="res://Youtube/Scripts/YoutubeDataAPI.cs" id="1_d5iiy"]
+[ext_resource type="Script" path="res://Youtube/Scripts/YoutubeAPITimer.cs" id="2_dguls"]
+
+[node name="YoutubeDataAPI" type="Node" node_paths=PackedStringArray("APITimer")]
+script = ExtResource("1_d5iiy")
+APITimer = NodePath("YoutubeAPITimer")
+
+[node name="YoutubeAPITimer" type="Node" parent="."]
+script = ExtResource("2_dguls")
